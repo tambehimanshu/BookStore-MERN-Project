@@ -1,5 +1,5 @@
 import React from 'react'
-
+import books from '../../public/books.jpg'
 function Baner() {
   return (
     <>
@@ -27,7 +27,9 @@ function Baner() {
     <button className="btn btn-secondary mt-6">Secondary</button>
     
     </div>
-    <div className='w-full md:w-1/2'>right</div>
+    <div className='w-full md:w-1/2'>
+    <img src={books} className=' ' alt="" />
+    </div>
     </div>
     </>
   )
