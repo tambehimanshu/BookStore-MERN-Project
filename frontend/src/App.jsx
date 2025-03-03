@@ -10,8 +10,9 @@ function App() {
     
     <Navbar/>
     <Baner />
-    <Footer/>
     <FreeBook/>
+    <Footer/>
+   
     </>
   )
 }
