@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from './components/Navbar'
 import Baner from './components/Baner'
 import Footer from './components/Footer'
+import FreeBook from './components/FreeBook'
 
 function App() {
   return (
@@ -10,8 +11,9 @@ function App() {
     <Navbar/>
     <Baner />
     <Footer/>
+    <FreeBook/>
     </>
   )
 }
-0
+
 export default App

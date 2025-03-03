@@ -1,0 +1,54 @@
+[{
+    "id":1,
+    "name":"Comedy Book",
+    "title":"lorem, ipsum dolor sit amet consectetur elit.",
+    "price":0,
+    "category":"free",
+    "image":"https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1741012964~exp=1741016564~hmac=d674ba3ac965364245bb3fc33aaf6ba3723015c1fdd26d13e19b11b4909a1e34&w=900"
+},
+
+{
+    "id":2,
+    "name":"Horror Book",
+    "title":"lorem, ipsum dolor sit amet consectetur elit.",
+    "price":0,
+    "category":"free",
+    "image":"https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1741012964~exp=1741016564~hmac=d674ba3ac965364245bb3fc33aaf6ba3723015c1fdd26d13e19b11b4909a1e34&w=900"
+}
+,
+{
+    "id":3,
+    "name":"historical Book",
+    "title":"lorem, ipsum dolor sit amet consectetur elit.",
+    "price":0,
+    "category":"free",
+    "image":"https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1741012964~exp=1741016564~hmac=d674ba3ac965364245bb3fc33aaf6ba3723015c1fdd26d13e19b11b4909a1e34&w=900"
+},
+
+{
+    "id":4,
+    "name":"comic Book",
+    "title":"lorem, ipsum dolor sit amet consectetur elit.",
+    "price":0,
+    "category":"free",
+    "image":"https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1741012964~exp=1741016564~hmac=d674ba3ac965364245bb3fc33aaf6ba3723015c1fdd26d13e19b11b4909a1e34&w=900"
+},
+{
+    "id":4,
+    "name":"comic Book",
+    "title":"lorem, ipsum dolor sit amet consectetur elit.",
+    "price":0,
+    "category":"free",
+    "image":"https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1741012964~exp=1741016564~hmac=d674ba3ac965364245bb3fc33aaf6ba3723015c1fdd26d13e19b11b4909a1e34&w=900"
+},
+{
+    "id":4,
+    "name":"comic Book",
+    "title":"lorem, ipsum dolor sit amet consectetur elit.",
+    "price":0,
+    "category":"free",
+    "image":"https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1741012964~exp=1741016564~hmac=d674ba3ac965364245bb3fc33aaf6ba3723015c1fdd26d13e19b11b4909a1e34&w=900"
+}
+
+
+]
