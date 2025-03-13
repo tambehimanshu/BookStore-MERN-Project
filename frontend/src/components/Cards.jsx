@@ -1,11 +1,11 @@
 import React from 'react'
 
-function Cards({item }) {
-  
+function Cards({ item }) { 
+  console.log(item);
   return (
-<>
-<div>
-<div className="card bg-base-100 w-96 shadow-xl">
+    <> 
+    <div>
+    <div className="card bg-base-100 w-96 shadow-sm">
   <figure>
     <img
       src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
@@ -13,18 +13,18 @@ function Cards({item }) {
   </figure>
   <div className="card-body">
     <h2 className="card-title">
-      Shoes
+      Card Title
       <div className="badge badge-secondary">NEW</div>
     </h2>
-    <p>If a dog chews whose shoes does he choose ??</p>
+    <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
     <div className="card-actions justify-end">
       <div className="badge badge-outline">Fashion</div>
       <div className="badge badge-outline">Products</div>
     </div>
   </div>
 </div>
-</div>
-</>
+    </div>
+    </>
   )
 }
 

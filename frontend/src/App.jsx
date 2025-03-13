@@ -12,7 +12,7 @@ function App() {
     <Navbar/>
     <Baner />
     <FreeBook/>
-    <Cards/>
+  
     <Footer/>
    
     </>
