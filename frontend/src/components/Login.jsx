@@ -9,9 +9,9 @@ function Login() {
           <div className="modal-box">
             <form method="dialog">
               {/* if there is a button in form, it will close the modal */}
-              <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 dark:text-slate-900">
+              <Link to='/' className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 dark:text-slate-900">
                 ✕
-              </button>
+              </Link>
             </form>
             <h3 className="font-bold text-lg text-center dark: text-slate-900">Login</h3>
             <div className="mt-4 space-y-2 ">
@@ -40,10 +40,11 @@ function Login() {
               </button>
               <p className="pt-5 dark: text-slate-900">
                 Not Registered?{" "}
-                <span className="  underline text-blue-500 cursor-pointer">
+            
+                <Link to='/signup'  className="  underline text-blue-500 cursor-pointer bg-white">
                   
                   Signup
-                </span>
+                </Link>
               </p>
             </div>
           </div>
