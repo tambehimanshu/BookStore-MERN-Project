@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Login() {
   return (
@@ -8,13 +9,13 @@ function Login() {
           <div className="modal-box">
             <form method="dialog">
               {/* if there is a button in form, it will close the modal */}
-              <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
+              <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 dark:text-slate-900">
                 ✕
               </button>
             </form>
-            <h3 className="font-bold text-lg text-center ">Login</h3>
+            <h3 className="font-bold text-lg text-center dark: text-slate-900">Login</h3>
             <div className="mt-4 space-y-2 ">
-              <span>Email </span>
+              <span className="dark: text-slate-900">Email </span>
               <input
                 type="email"
                 placeholder="Enter your Email"
@@ -24,7 +25,7 @@ function Login() {
 
             {/* password */}
             <div className="mt-4 space-y-2 ">
-              <span>Password </span>
+              <span className="dark: text-slate-900">Password </span>
               <input
                 type="password"
                 placeholder="Enter your Password"
@@ -33,16 +34,21 @@ function Login() {
             </div>
 
             {/* button */}
-            <div className="flex justify-around mt-4 "> 
-            
+            <div className="flex justify-around mt-4 ">
               <button className="bg-pink-500 text-white mt-4 space-y-2 rounded-md px-3 py-1 hover:bg-pink-700 duration-200">
                 Login
               </button>
-    <p className="pt-5">Not Registered? <span className="  underline text-blue-500 cursor-pointer"> Signup</span></p>
-        </div>
-                 </div>
-                </dialog>
-             </div>
+              <p className="pt-5 dark: text-slate-900">
+                Not Registered?{" "}
+                <span className="  underline text-blue-500 cursor-pointer">
+                  
+                  Signup
+                </span>
+              </p>
+            </div>
+          </div>
+        </dialog>
+      </div>
     </>
   );
 }
