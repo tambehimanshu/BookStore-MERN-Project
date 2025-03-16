@@ -1,19 +1,28 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Login from './Login'
+import { useForm } from "react-hook-form"
 
 function Signup() {
+  const {
+      register,
+      handleSubmit,
+     
+      formState: { errors },
+    } = useForm()
+  
+    const onSubmit = (data) => console.log(data)
   return (
    <>
    <div className=" flex h-screen  items-center justify-center ">
    <div className=" w-[600px]" >
           <div  className='modal-box'>
-            <form method="dialog">
+            <form   onSubmit={handleSubmit(onSubmit)}  method="dialog">
               {/* if there is a button in form, it will close the modal */}
               <Link to="/" className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 dark:text-slate-900">
                 ✕
               </Link>
-            </form>
+         
             <h3 className="font-bold text-lg text-center dark: text-slate-900">Signup</h3>
             {/* name */}
             <div className="mt-4 space-y-2 ">
@@ -22,7 +31,11 @@ function Signup() {
                 type="text"
                 placeholder="Enter your Name"
                 className="w-full px-3 py-1 border rounded-md outline-none "
-              />
+                {...register("name", { required: true })}
+                
+                />
+                <br />
+                  {errors.name && <span  className="text-sm text-red-600" >This field is required*</span>}
             </div>
             <div className="mt-4 space-y-2 ">
               <span className="dark: text-slate-900 ">Email </span>
@@ -30,7 +43,10 @@ function Signup() {
                 type="email"
                 placeholder="Enter your Email"
                 className="w-full  px-3 py-1 border rounded-md outline-none "
-              />
+                {...register("email", { required: true })}              />
+                <br />
+                  {errors.email && <span className="text-sm text-red-600"> This field is required*</span>}
+              
             </div>
 
             {/* password */}
@@ -40,7 +56,11 @@ function Signup() {
                 type="password"
                 placeholder="Enter your Password"
                 className="w-full px-3 py-1 border rounded-md outline-none "
-              />
+                {...register("password", { required: true })}
+                
+                />
+                <br />
+                  {errors.password && <span  className="text-sm text-red-600" >This field is required*</span>}
             </div>
           
 
@@ -65,6 +85,7 @@ function Signup() {
                 <Login/>
               </p>
             </div>
+            </form>
           </div>
         </div>
    </div>
