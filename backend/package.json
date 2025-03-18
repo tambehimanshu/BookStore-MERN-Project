@@ -1,0 +1,28 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "mern project",
+  "type": "commonjs",
+  "homepage": "https://github.com/tambehimanshu/BookStore-MERN-Project#readme",
+  "bugs": {
+    "url": "https://github.com/tambehimanshu/BookStore-MERN-Project/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tambehimanshu/BookStore-MERN-Project.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.12.1"
+  }
+}
