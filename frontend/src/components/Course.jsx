@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import Cards from "./Cards";
 import {Link } from 'react-router-dom';
 import axios from "axios";
+import Navbar from "./Navbar";
 
 function Course() {
   const [book,setBook]= useState([])
@@ -22,13 +23,19 @@ function Course() {
   console.log(book);
   return (
     <>
+    <div className="bg-slate-00"><h1></h1>
+   
       <div className="max-w-screen-2xl container mx-auto md:px-20 px-4 bg dark:bg-slate-950 ">
-        <div className="mt-28  items-center justify-center text-center">
-          <h1 className="text-2xl md:text-4xl">
+        <div className="   items-center justify-center text-center">
+          <h1 className="text-2xl md:text-4xl dark:text-slate-100">
+            {" "}
+            <span className="text-pink-500"></span>
+          </h1>
+          <p className="mt-12">
+          <h1 className="text-2xl pb-5 pt-7 md:text-4xl">
             We're delighted to have you{" "}
             <span className="text-pink-500">Here! :)</span>
           </h1>
-          <p className="mt-12">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis iusto officia adipisci sit molestiae deleniti ratione numquam id quaerat, corporis, dicta nobis modi, repudiandae ex asperiores. Ut harum dignissimos incidunt, nam modi atque distinctio autem animi tempora quibusdam quae, molestiae minus repellendus rem at voluptas sint aliquam mollitia fuga unde.
           </p>
 
@@ -46,6 +53,7 @@ function Course() {
             ))
           }
         </div>
+      </div>
       </div>
     </>
   );

@@ -38,21 +38,21 @@ function Signup() {
    <>
    <div className="flex h-screen items-center justify-center">
      <div className="w-[600px]">
-       <div className='modal-box'>
+       <div className='modal-box dark:bg-slate-900 '>
          <form onSubmit={handleSubmit(onSubmit)}>  {/* ✅ Removed method="dialog" */}
-           <Link to="/" className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 dark:text-slate-900">
+           <Link to="/" className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 dark:text-slate-100">
              ✕
            </Link>
          
-           <h3 className="font-bold text-lg text-center dark:text-slate-900">Signup</h3>
+           <h3 className="font-bold text-lg text-center dark:text-slate-100">Signup</h3>
 
            {/* Name Field */}
            <div className="mt-4 space-y-2">
-             <span className="dark:text-slate-900">Name</span>
+             <span className="dark:text-slate-100">Name</span>
              <input
                type="text"
                placeholder="Enter your FullName"
-               className="w-full px-3 py-1 border rounded-md outline-none"
+               className="w-full px-3 py-1 border rounded-md outline-none dark:bg-slate-900"
                {...register("fullname", { required: true })}
              />
              {errors.fullname && <span className="text-sm text-red-600">This field is required*</span>}
@@ -60,11 +60,11 @@ function Signup() {
 
            {/* Email Field */}
            <div className="mt-4 space-y-2">
-             <span className="dark:text-slate-900">Email</span>
+             <span className="dark:text-slate-100">Email</span>
              <input
                type="email"
                placeholder="Enter your Email"
-               className="w-full px-3 py-1 border rounded-md outline-none"
+               className="w-full px-3 py-1 border rounded-md outline-none dark:bg-slate-900  dark:text-slate-100"
                {...register("email", { required: true })}
              />
              {errors.email && <span className="text-sm text-red-600">This field is required*</span>}
@@ -72,14 +72,14 @@ function Signup() {
 
            {/* Password Field */}
            <div className="mt-4 space-y-2">
-             <span className="dark:text-slate-900">Password</span>
+             <span className="dark:text-slate-100">Password</span>
              <input
                type="password"
                placeholder="Enter your Password"
-               className="w-full px-3 py-1 border rounded-md outline-none"
+               className="w-full px-3 py-1 border rounded-md outline-none  dark:bg-slate-900 dark:text-slate-100"
                {...register("password", { required: true })}
              />
-             {errors.password && <span className="text-sm text-red-600">This field is required*</span>}
+             {errors.password && <span className="text-sm text-red-600  dark:text-slate-100">This field is required*</span>}
            </div>
           
            {/* Signup Button */}
@@ -87,30 +87,27 @@ function Signup() {
              <button className="bg-pink-500 text-white mt-4 rounded-md px-3 py-1 hover:bg-pink-700 duration-200">
                Signup
              </button>
-           </div>
-         </form>
+           
+         
 
-         {/* ✅ Login Modal is moved OUTSIDE the form */}
-         <div className="pt-5 dark:text-slate-900 text-center">
+         {/*  Login Modal is moved OUTSIDE the form */}
+
            <p>Have an account?{" "}
              <button 
-               className="underline text-blue-500 cursor-pointer bg-white"
+               className="underline text-blue-500 pt-4 cursor-pointer  "
                onClick={() => document.getElementById("my_modal_3").showModal()}
              >
                Login
              </button>
+             <Login/>
            </p>
          </div>
+         </form>
        </div>
      </div>
    </div>
 
-   {/* ✅ Login Modal (Outside Form) */}
-   <dialog id="my_modal_3" className="modal">
-     <div className="modal-box">
-       <Login />
-     </div>
-   </dialog>
+ 
    </>
   )
 }

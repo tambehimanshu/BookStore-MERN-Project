@@ -22,11 +22,11 @@ function Login() {
     .then((res)=>{
       console.log(res.data)
       if (res.data) {
-        toast.success("Loggedin Successfully");
-        document.getElementById("my_modal_3").close();
+        toast.success("Loggedin Successfully"); 
+        document.getElementById("my_modal_3").close(); // to closed the login promt
         setTimeout(() => {
-          window.location.reload();
-          localStorage.setItem("Users", JSON.stringify(res.data.user));
+          window.location.reload();   // for reload
+          localStorage.setItem("Users", JSON.stringify(res.data.user));   //for storing data locally
         }, 1000);
        
         
@@ -47,21 +47,21 @@ function Login() {
   return (
     <>
       <div>
-        <dialog id="my_modal_3" className="modal ">
-          <div className="modal-box">
+        <dialog id="my_modal_3" className="modal  ">
+          <div className="modal-box dark:bg-slate-900">
             <form  onSubmit={handleSubmit(onSubmit)} method="dialog">
               {/* if there is a button in form, it will close the modal */}
-              <Link to='/' className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2  dark:text-slate-900" onClick={()=>document.getElementById("my_modal_3").close()}>
+              <Link to='/' className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2  dark:text-slate-100 dark:hover:bg-slate-600 border-none" onClick={()=>document.getElementById("my_modal_3").close()}>
                 ✕
               </Link>
             
-            <h3 className="font-bold text-lg text-center dark: text-slate-900">Login</h3>
+            <h3 className="font-bold text-lg text-center dark: text-slate-900 dark:text-slate-100">Login</h3>
             <div className="mt-4 space-y-2 ">
-              <span className="dark: text-slate-900">Email </span>
+              <span className="dark: text-slate-900 dark:text-slate-100">Email </span>
               <input
                 type="email"
                 placeholder="Enter your Email"
-                className="w-full  px-3 py-1 border rounded-md outline-none "
+                className="w-full  px-3 py-1 border rounded-md outline-none dark:text-slate-100 dark:bg-slate-900"
                 {...register("email", { required: true })}              />
                 <br />
                   {errors.email && <span className="text-sm text-red-600"> This field is required*</span>}
@@ -69,11 +69,12 @@ function Login() {
 
             {/* password */}
             <div className="mt-4 space-y-2 ">
-              <span className="dark: text-slate-900">Password </span>
+              <span className=" dark:text-slate-100">Password </span>
               <input
+              
                 type="password"
                 placeholder="Enter your Password"
-                className="w-full px-3 py-1 border rounded-md outline-none "
+                className="w-full px-3 py-1 border rounded-md outline-none dark:text-slate-100 dark:bg-slate-900"
                 {...register("password", { required: true })}
                 
               />
@@ -86,10 +87,10 @@ function Login() {
               <button   className="bg-pink-500 text-white mt-4 space-y-2 rounded-md px-3 py-1 hover:bg-pink-700 duration-200">
                 Login
               </button>
-              <p className="pt-5 dark: text-slate-900">
+              <p className="pt-5 dark:text-slate-100">
                 Not Registered?{" "}
             
-                <Link to='/signup'  className="  underline text-blue-500 cursor-pointer bg-white">
+                <Link to='/signup'  className="  underline text-blue-500 cursor-pointer ">
                   
                   Signup
                 </Link>

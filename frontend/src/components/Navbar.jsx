@@ -43,18 +43,18 @@ else{
   const navItem = (
     <>
       <li>
-        <a href="/">Home</a>
+        <a className="dark:hover:bg-slate-800" href="/">Home</a>
       </li>
       <li>
       
-        <a href="/course">Course</a>
+        <a className="dark:hover:bg-slate-800" href="/course">Course</a>
       </li>
       <li>
-        <a>Contact</a>
+        <a className="dark:hover:bg-slate-800">Contact</a>
       </li>
 
       <li>
-        <a>About</a>
+        <a className="dark:hover:bg-slate-800"  >About</a>
       </li>
     </>
   );
@@ -94,7 +94,7 @@ else{
               </div>
               <ul
                 tabIndex={0}
-                className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+                className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow dark:bg-slate-900 hover:"
               >
                 {navItem}
               </ul>
